@@ -1,12 +1,4 @@
-
-name: CI
-
-on: [push, workflow_dispatch]
-
-jobs:
-  build:
-
-    runs-on: windows-latest
+  runs-on: windows-latest
 
     steps:
     - name: Download
@@ -24,6 +16,3 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Shahid@123" -Force)
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
-Github RDP.txt.txt
-
-جارٍ عرض Github RDP.txt.txt.
